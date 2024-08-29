@@ -72,6 +72,22 @@ The project is structured into two layers:
 
 - Basic test cases have been added under the `test` folder. These can be run to validate the functionality of the API and ensure everything is working as expected.
 
+To ensure your API works as expected, we've included test cases using `pytest`. You can run these tests easily using the provided shell script.
+
+### Steps to Run the Tests
+
+1. **Make the script executable** (this step is only needed once):
+
+   ```sh
+   chmod +x run_tests.sh
+   ```
+
+2. **Run the script**
+
+   ```
+   ./run_tests.sh
+   ```
+
 ## **Benchmarking**
 
 The following table summarizes the performance benchmarks achieved under different configurations:

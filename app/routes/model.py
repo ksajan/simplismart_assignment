@@ -12,5 +12,5 @@ def health_check():
 
 
 @model_router.get("/predict")
-def predict_completion(request_body: LlamaCppCompletionOptions):
+def completion(request_body: LlamaCppCompletionOptions):
     return predict_completion(request_body)
