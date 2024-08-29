@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  llm-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: llm-server
+    ports:
+      - "8888:8888"
+    environment:
+      - PORT=8888
+    command: ./server-llm.sh --non-interactive # Start the LLM server
+
+  api-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-server
+    ports:
+      - "8000:8000"
+    depends_on:
+      llm-server:
+        condition: service_healthy
+    environment:
+      - PORT=8000
+      - LLM_SERVER_URL=http://llm-server:8888
+    command: ./api-server.sh # Start the API server
