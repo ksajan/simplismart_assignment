@@ -163,4 +163,5 @@ cython_debug/
 
 
 vicuna-7b*
-**cpp*
+*cpp*/*
+__llama_cpp_port_8888__/*
