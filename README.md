@@ -110,6 +110,7 @@ The following table summarizes the performance benchmarks achieved under differe
 
 - Successfully implemented the API layer with FastAPI, integrated `llama.cpp` for model quantization and serving, and implemented dynamic batching for efficient request handling.
 - Integrated an existing Medusa head model but could not replicate training due to resource limitations.
+- Used the llamma_cpp hosted server on hugging face [gguf_my_repo](https://huggingface.co/spaces/ggml-org/gguf-my-repo) for easier conversion. 
 
 ## **Future Work**
 
