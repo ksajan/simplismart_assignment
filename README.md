@@ -79,13 +79,13 @@ To ensure your API works as expected, we've included test cases using `pytest`. 
 1. **Make the script executable** (this step is only needed once):
 
    ```sh
-   chmod +x run_tests.sh
+   chmod +x test.sh
    ```
 
 2. **Run the script**
 
    ```
-   ./run_tests.sh
+   ./test.sh
    ```
 
 ## **Benchmarking**
